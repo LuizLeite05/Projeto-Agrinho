@@ -43,10 +43,10 @@ CREATE TABLE IF NOT EXISTS `noticia` (
   `data_publicacao` DATE NOT NULL,
   `qtd_comentario` INT UNSIGNED,
   `qtd_curtidas` INT UNSIGNED,
-  `id_instituicao` INT UNSIGNED,
+  `id_administrador` INT UNSIGNED,
   `id_comentario` INT UNSIGNED,
   PRIMARY KEY `id_noticia` (`id_noticia`),
-  KEY `administrador` (`administrador`),
+  KEY `id_administrador` (`id_administrador`),
   KEY `id_comentario` (`id_comentario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -71,6 +71,26 @@ INSERT INTO comentario (id_comentario, qtd_curtidas, qtd_respostas, id_usuario, 
 INSERT INTO noticia (id_noticia, data_publicacao, qtd_comentario, qtd_curtidas, administrador, id_comentario) VALUES
 (1, '2024-05-06', 5, 500, 2, 1),
 (2, '2023-02-05', 30, 400, 2, 2);
+
+-- Estrutura 
+DROP VIEW IF EXISTS `view_usuario_noticia`;
+CREATE TABLE IF NOT EXISTS `view_usuario_noticia` (
+`id_usuario` bigint UNSIGNED
+,`id_noticia` bigint UNSIGNED
+,`nome_usuario` VARCHAR(255)
+,`data_publicacao` DATE
+,`qtd_comentario` INT
+,`qtd_curtidas` INT
+);
+
+ALTER TABLE comentario
+  ADD CONSTRAINT usuario_c1 FOREIGN KEY (id_usuario) REFERENCES usuario (id_usuario) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT noticia_c1 FOREIGN KEY (id_noticia) REFERENCES noticia (id_noticia) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE noticia
+  ADD CONSTRAINT administrador_c1 (id_administrador) REFERENCES usuario (id_usuario) IF id_usuario = 1 ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT comentario_c1 FOREIGN KEY (id_comentario) REFERENCES comentario (id_comentario) ON DELETE CASCADE ON UPDATE CASCADE;
+
 
 
 
