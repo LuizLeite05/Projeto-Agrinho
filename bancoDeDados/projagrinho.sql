@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS `noticia` (
   `qtd_curtidas` INT UNSIGNED,
   `id_administrador` INT UNSIGNED,
   `id_comentario` INT UNSIGNED,
+  `categoria` VARCHAR(255) NOT NULL,
   PRIMARY KEY `id_noticia` (`id_noticia`),
   KEY `id_administrador` (`id_administrador`),
   KEY `id_comentario` (`id_comentario`)
