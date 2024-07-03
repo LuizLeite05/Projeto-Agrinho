@@ -1,0 +1,23 @@
+.corpo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.textAtual h2 {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: rgb(28, 202, 28);
+}
+
+.iconPage{
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+}
