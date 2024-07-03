@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS `comentario` (
   `qtd_respostas` INT UNSIGNED,
   `id_usuario` bigint UNSIGNED NOT NULL,
   `id_noticia` bigint UNSIGNED NOT NULL,
+  `comentario_armazenado` varchar(255) NOT NULL,
   PRIMARY KEY(`id_comentario`),
   UNIQUE KEY `id_comentario` (`id_comentario`),
   KEY `id_usuario` (`id_usuario`),
@@ -51,6 +52,7 @@ CREATE TABLE IF NOT EXISTS `noticia` (
   `id_administrador` bigint UNSIGNED,
   `id_categoria` bigint UNSIGNED NOT NULL,
   `id_comentario` bigint UNSIGNED,
+  `noticia_armazenada` varchar(255) NOT NULL,
   PRIMARY KEY `id_noticia` (`id_noticia`),
   KEY `id_administrador` (`id_administrador`),
   KEY `id_comentario` (`id_comentario`)
