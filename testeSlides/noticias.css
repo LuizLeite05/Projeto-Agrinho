@@ -1,0 +1,103 @@
+#noticias #titulo {
+  position: relative;
+  background-color: rgb(161, 88, 35);
+  color: white;
+  width: 50%;
+  height: 8vh;
+  top: 15vh;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#noticias .listra3,
+.listra4 {
+  position: absolute;
+  background-color: rgb(15, 171, 15);
+  width: 30%;
+  height: 8vh;
+  bottom: -103vh;
+}
+#noticias .listra4 {
+  left: 69.5%;
+  border-radius: 0 0 0 15px;
+}
+#noticias .listra3 {
+  border-radius: 0 0 15px 0;
+}
+#bovinos,
+#suinos,
+#aves,
+#graos,
+#inovacao {
+  position: relative;
+}
+#bovinos ul,
+#suinos ul,
+#aves ul,
+#graos ul,
+#inovacao ul {
+  position: relative;
+  top: 25vh;
+  left: 15%;
+  width: 75%;
+  height: 80vh;
+}
+#bovinos ul li,
+#suinos ul li,
+#aves ul li,
+#graos ul li,
+#inovacao ul li {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  padding-top: 15px;
+  border-bottom: 2px solid rgb(161, 88, 35);
+}
+#bovinos ul li a,
+#suinos ul li a,
+#aves ul li a,
+#graos ul li a,
+#inovacao ul li a {
+  width: 50%;
+  height: 40%;
+  color: rgb(15, 171, 15);
+  font-size: 1.2vw;
+  font-size-adjust: auto;
+}
+#bovinos ul li img,
+#suinos ul li img,
+#aves ul li img,
+#graos ul li img,
+#inovacao ul li img {
+  width: 40%;
+  height: 100%;
+}
+
+#suinos {
+  top: 10vh;
+}
+#aves {
+  top: 20vh;
+}
+#graos {
+  top: 30vh;
+}
+#inovacao {
+  top: 40vh;
+}
+.favoritos {
+  position: absolute;
+  width: 10%;
+  bottom: 42vh;
+}
+.favoritos2 {
+  position: absolute;
+  width: 10%;
+  bottom: 2vh;
+}

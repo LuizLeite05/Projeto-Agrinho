@@ -1,0 +1,119 @@
+table {
+  position: relative;
+  width: 80%;
+  height: 70vh;
+  top: 10vh;
+  left: 10%;
+  border: 3px solid black;
+}
+
+#maisrecente {
+  width: 50%;
+  height: 100%;
+}
+
+tr td img {
+  width: 100%;
+  height: 100%;
+}
+#maisrecente .informacao {
+  position: absolute;
+  width: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.768),
+    rgba(0, 0, 0, 0.401)
+  );
+  bottom: 0.5vh;
+  color: white;
+  text-align: center;
+  border-radius: 0 15px 0 0;
+}
+#maisrecente .informacao h1 {
+  color: rgb(19, 223, 19);
+}
+#maisrecente .informacao p {
+  color: rgb(255, 255, 255);
+}
+
+.noticia-secundaria {
+  width: 40%;
+  height: 35vh;
+}
+.noticia-secundaria .informacao2 {
+  position: absolute;
+  width: 40%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.768),
+    rgba(0, 0, 0, 0.401)
+  );
+  bottom: 37vh;
+  color: white;
+  text-align: center;
+  border-radius: 0 15px 0 0;
+}
+.noticia-secundaria .informacao2 h1 {
+  color: rgb(19, 223, 19);
+}
+.noticia-secundaria .informacao2 p {
+  color: rgb(255, 255, 255);
+}
+
+.noticia-terciaria {
+  width: 40%;
+  height: 35vh;
+}
+.noticia-terciaria .informacao3 {
+  position: absolute;
+  width: 40%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.768),
+    rgba(0, 0, 0, 0.401)
+  );
+  bottom: 1vh;
+  color: white;
+  text-align: center;
+  border-radius: 0 15px 0 0;
+}
+.noticia-terciaria .informacao3 h1 {
+  color: rgb(19, 223, 19);
+}
+.noticia-terciaria .informacao3 p {
+  color: rgb(255, 255, 255);
+}
+
+td {
+  border: 3px solid black;
+}
+
+#emAlta #titulo {
+  position: relative;
+  background-color: rgb(15, 171, 15);
+  color: white;
+  width: 50%;
+  height: 8vh;
+  top: 5vh;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#emAlta .listra1,
+.listra2 {
+  position: absolute;
+  background-color: rgba(152, 63, 0, 0.674);
+  width: 30%;
+  height: 8vh;
+  bottom: -6vh;
+}
+#emAlta .listra2 {
+  left: 69.5%;
+  border-radius: 0 0 0 15px;
+}
+#emAlta .listra1 {
+  border-radius: 0 0 15px 0;
+}
